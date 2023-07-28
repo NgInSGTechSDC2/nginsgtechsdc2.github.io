@@ -1,0 +1,8 @@
+@use "font" as *
+
+@mixin generate-heading-styles()
+  $heading-tags: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+
+  @each $heading-tag in $heading-tags
+    #{$heading-tag}
+      @extend %#{$heading-tag}
